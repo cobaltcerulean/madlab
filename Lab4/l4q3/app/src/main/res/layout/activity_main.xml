@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <!-- ToggleButton for selecting mode -->
+    <ToggleButton
+        android:id="@+id/toggle_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Wi-Fi"
+        android:textOff="Mobile Data"
+        android:checked="true" />
+
+    <!-- ImageView to show the current mode -->
+    <ImageView
+        android:id="@+id/image_mode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/eve1" />
+
+    <!-- Button to change mode -->
+    <Button
+        android:id="@+id/button_change_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Change Mode" />
+
+</LinearLayout>

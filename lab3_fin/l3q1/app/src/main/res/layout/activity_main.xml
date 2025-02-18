@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#275E53"
+        app:tabSelectedTextColor="@color/white"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/art"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="artists"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/alb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="albums"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/sng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="songs"/>
+
+    </com.google.android.material.tabs.TabLayout>
+    
+    <FrameLayout
+        android:id="@+id/frameLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

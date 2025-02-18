@@ -1,0 +1,2 @@
+public class tab1 {
+}
